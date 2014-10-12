@@ -31,7 +31,15 @@
         <script src="js/bootstrap.min.js"></script>
         <script type="text/javascript" src="css/fancybox/jquery.fancybox.js?v=2.1.5"></script>
 
+
     </head>
+    <style type="text/css">
+  
+  .marginEtiqueta{
+    margin-bottom: 50px;
+    border-color: 1px;
+                }
+</style>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -101,17 +109,21 @@
                                                 
                                               <tr>
                                                 <td>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
                                                   <fieldset> 
-        <input type=hidden name=ie value=UTF-8 /> 
-        <input type=hidden name=oe value=UTF-8 /> 
-                         
-        <INPUT TYPE=text id="s" name="q" value="" size="20" /> 
-        <font size=-1>                   
-                         
-        <INPUT type=submit  id="x" name=btnG VALUE="Buscar Carpeta" /> 
-        </font> 
-    </fieldset> 
-    </FORM>
+                                                      <input type=hidden name=ie value=UTF-8 /> 
+                                                      <input type=hidden name=oe value=UTF-8 /> 
+                                                                       
+                                                      <INPUT TYPE=text id="s" name="q" value="" size="20" /> 
+                                                      <font size=-1>                   
+                                                                       
+                                                      <INPUT type=submit id="x" name=btnG VALUE="Buscar Carpeta" /> 
+                                                      </font> 
+                                                      <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                  </fieldset> 
+                                                  </FORM>
     <!--<form method = "get" action="search.php">
     <imput type="search" size = "50" name = "es" results="6" placeholder = "Escribe tu busqueda" required = "required">
     <button type="submit">Buscar</button>
@@ -119,27 +131,36 @@
                                                 </td>
                                               </tr>                                        
                                               <tr>
-                                                <td>
-                                                  <a href="" class="btn btn-primary">Crear Carpeta</a>
+                                                <td>                                                                                                 
+                                                  <a href="" class="btn btn-primary SepararEspacioVertical">Crear Carpeta</a>
                                                   <a href=""><img src="img/Crear_Carpeta.jpg"></a>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
                                                 </td>
                                               </tr>
                                               <tr>
                                                 <td>
-                                                  <a href="" class="btn btn-primary">Subir Archivo</a>
+                                                  <a href="" class="btn btn-primary paddingbottom">Subir Archivo</a>
                                                   <a href=""><img src="img/Subir_Archivo.jpg"></a>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
                                                 </td>
                                               </tr>
                                               <tr>
                                                 <td >
-                                                  <imput type = "submit" class="btn btn-success" value = "Descargar">
+                                                  <!--<imput type = "submit" class="btn btn-success paddingbottom" value = "Descargar">-->
+                                                  <a href="" class="btn btn-primary paddingbottom">Descargar Carpeta</a>
                                                   <a href=""><img src="img/Descargar.jpg"></a>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
                                                 </td>
                                               </tr>
                                               <tr>
                                                 <td>
-                                                  <a href="" class="btn btn-primary">Eliminar</a>
+                                                  <a href="" class="btn btn-primary paddingbottom">Eliminar Carpeta</a>
                                                   <a href=""><img src="img/Eliminar_Carpeta.jpg"></a>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
                                                 </td>
                                               </tr>
                                             
