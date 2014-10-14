@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+        <script src="js/vendor/jquery.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>        
+        <script src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="css/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+        <style type="text/css" media="screen">
+          .marginButtonPopupFolder{
+            margin-top: 25px;
+          }
+          .list-group.panel > .list-group-item {
+          border-bottom-right-radius: 4px;
+          border-bottom-left-radius: 4px
+        }
+        .list-group-submenu {
+          margin-left:20px;
+        }
+        .tamanioTitulo{
+          font-size: 25px;
+
+        }
+        </style>
+</head>
+<body>
+  <div id="container">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+      <label for="" class="tamanioTitulo"><strong>Ingresar nuevo Folder</strong></label>
+      <hr>
+    </div>
+    <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <label for="">OrdenFolder</label>
+        
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div id="MainMenu">
+          <div class="list-group panel">
+            <a href="#demo3" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 3</a>
+            <div class="collapse" id="demo3">
+              <a href="#SubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubMenu1">Subitem 1 <i class="fa fa-caret-down"></i></a>
+              <div class="collapse list-group-submenu" id="SubMenu1">
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 1 a</a>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 2 b</a>
+                <a href="#SubSubMenu1" class="list-group-item" data-toggle="collapse" data-parent="#SubSubMenu1">Subitem 3 c <i class="fa fa-caret-down"></i></a>
+                <div class="collapse list-group-submenu list-group-submenu-1" id="SubSubMenu1">
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 1</a>
+                  <a href="#" class="list-group-item" data-parent="#SubSubMenu1">Sub sub item 2</a>
+                </div>
+                <a href="#" class="list-group-item" data-parent="#SubMenu1">Subitem 4 d</a>
+              </div>
+              <a href="javascript:;" class="list-group-item">Subitem 2</a>
+              <a href="javascript:;" class="list-group-item">Subitem 3</a>
+            </div>
+            <a href="#demo4" class="list-group-item list-group-item-success" data-toggle="collapse" data-parent="#MainMenu">Item 4</a>
+            <div class="collapse" id="demo4">
+              <a href="" class="list-group-item">Subitem 1</a>
+              <a href="" class="list-group-item">Subitem 2</a>
+              <a href="" class="list-group-item">Subitem 3</a>
+            </div>
+          </div>
+        </div>      
+      </div>
+
+    </div>
+    <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 ">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row">
+        <label for="">Ingrese Nombre:</label>          
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row">
+        <input type="text" name="" id="input" class="form-control" value="" required="required" pattern="" title="">
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row marginButtonPopupFolder">
+        <button type="button" class="btn btn-success btn-block">Agregar</button>
+      </div>
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row marginButtonPopupFolder">
+        <button type="button" class="btn btn-warning btn-block">Salir</button>
+      </div>
+    </div>
+  </div>  
+</body>
+</html>
