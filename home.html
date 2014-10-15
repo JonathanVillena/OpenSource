@@ -73,9 +73,13 @@
                          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
                            <label>u201113344</label>
                          </div>
-                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row text-center">
-                           <button type="button" class="btn btn-primary">Cerrar Session</button>
-                         </div>
+                       
+                           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 row text-center">
+                           <button type="button" id="btncerrar" class="btn btn-primary">Cerrar Session</button>
+                           </div>
+                        
+                         
+                         
                        </div>
                     </div>
               </div>
@@ -87,27 +91,19 @@
                     <div class="container">
                         <div class="navbar-header">
                             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                                <span class="sr-only">Cambiar Navegacion</span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                                <span class="icon-bar"></span>
-                            </button><!-- ESTE BOTON ES PARA OBTENER A LA DERECHA UN CUADRITO CON UN BOTON CON UN MENU DESPLEGABLE -->
+                            </button>
         
                             <a href="#" class="navbar-brand visible-xs " style="float:right;color:white;">Menu</a>
                         </div>
                         <div class="collapse navbar-collapse navbar-ex1-collapse ">
                             <ul class="nav navbar-nav" style="float:none;">
-                          
-                                <li class="col-sm-3  col-md-3 col-lg-3 hovermenu"><a href="perfil.html" class="menu-estil"><div class="text-center FuenteMenu">Perfil</div></a></li>
-                                <li class="dropdown col-sm-3  col-md-3 col-lg-3 hovermenu text-center">
-                                  <a href="javascript:void(0);" class="dropdown-toggle colorFuenteMenu" data-toggle="dropdown">Cursos <b class="caret"></b></a>
-                                  <ul class="dropdown-menu" rol="menu">
-                                    <li><a role="menuitem" class="colorFuenteMenu" href="usuarios.php" >Cursos del Ciclo</a></li>
-                                    <li><a role="menuitem" class="colorFuenteMenu" href="javascript:void(0);"  >Otros cursos</a></li>
-                                  </ul>
-                                </li>
-                               <li class="col-sm-3 col-md-3 col-lg-3 hovermenu"><a href="almacenar.html" class="menu-estil"><div class="text-center FuenteMenu">AlmacenarArchivos</div></a></li>
-                                <li class="col-sm-3 col-md-3 col-lg-3 hovermenu"><a href="grupos.html" class="menu-estil"><div class="text-center FuenteMenu">Grupos</div></a></li>
+                                 <li class="col-sm-1  col-md-1 col-lg-1 hovermenu"></li>                               
+                                <li class="col-sm-2  col-md-2 col-lg-2 hovermenu"><a href="home.html" class="menu-estil"><div class="text-center FuenteMenu">Mis Archivos</div></a></li>
+                               <li class="col-sm-2 col-md-2 col-lg-2 hovermenu"><a href="seccionimagenes.html" class="menu-estil"><div class="text-center FuenteMenu">Imagenes</div></a></li>
+                               <li class="col-sm-2 col-md-2 col-lg-2 hovermenu"><a href="favoritos.html" class="menu-estil"><div class="text-center FuenteMenu">Favoritos</div></a></li>
+                                <li class="col-sm-2 col-md-2 col-lg-2 hovermenu"><a href="carpetasfavoritas.html" class="menu-estil"><div class="text-center FuenteMenu">Carpetas Favoritas</div></a></li>
+                                <li class="col-sm-2 col-md-2 col-lg-2 hovermenu"><a href="circuloamigos.html" class="menu-estil"><div class="text-center FuenteMenu">CirculoAmigos</div></a></li>
+                                <li class="col-sm-1 col-md-1 col-lg-1 hovermenu"></li>
         
                              </ul>
                           
@@ -119,74 +115,73 @@
         </header>
          <div class="container">
                <div class="row"> 
-                   <div class="col-md-3" id="leftCol">
-                            
-                            <!-- ACA VA LA OTRA PARTE -->
-                            <div class="well"> 
-                                <ul class="nav nav-stacked" id="sidebar">
-        
-                                  <FORM method=GET action="http://www.google.es/search"> 
+                    <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+                              
+                              <div class="well"> 
+                                  <ul class="nav nav-stacked" id="sidebar">
+          
+                                    <FORM method=GET action="http://www.google.es/search"> 
+             
+                                          <table>
+                                                
+                                              <tr>
+                                                <td>
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                  <fieldset> 
+                                                      <input type=hidden name=ie value=UTF-8 /> 
+                                                      <input type=hidden name=oe value=UTF-8 /> 
+                                                                       
+                                                      <INPUT TYPE=text id="s" name="q" value="" size="20" /> 
+                                                      <font size=-1>                   
+                                                                       
+                                                      <INPUT type=submit id="x" name=btnG VALUE="Buscar Carpeta" /> 
+                                                      </font> 
+                                                      <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                  </fieldset> 
            
-                                        <table>
-                                              
-                                            <tr>
-                                              <td>
-                                                <div class="marginEtiqueta">                                               
-                                                </div>
-                                                <fieldset> 
-                                                    <input type=hidden name=ie value=UTF-8 /> 
-                                                    <input type=hidden name=oe value=UTF-8 /> 
-                                                                     
-                                                    <INPUT TYPE=text id="s" name="q" value="" size="20" /> 
-                                                    <font size=-1>                   
-                                                                     
-                                                    <INPUT type=submit id="x" name=btnG VALUE="Buscar Carpeta" /> 
-                                                    </font> 
-                                                    <div class="marginEtiqueta">                                               
-                                                </div>
-                                                </fieldset> 
-         
-                                              </td>
-                                            </tr>                                        
-                                            <tr>
-                                              <td>     
-												<a href=""><img src="img/Crear_Carpeta.png"></a> &nbsp											  
-                                                <a href="" class="btn btn-primary SepararEspacioVertical">Crear Carpeta</a>                                                
-                                                <div class="marginEtiqueta">                                               
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td>
-												<a href=""><img src="img/Subir_Archivo.png"></a> &nbsp
-                                                <a href="" class="btn btn-primary paddingbottom">Subir Archivo</a>                                              
-                                                <div class="marginEtiqueta">                                               
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td >
-												<a href=""><img src="img/Descargar_Carpeta.png"></a> &nbsp
-                                                <!--<imput type = "submit" class="btn btn-success paddingbottom" value = "Descargar">-->
-                                                <a href="" class="btn btn-primary paddingbottom">Descargar Carpeta</a>                                                
-                                                <div class="marginEtiqueta">                                               
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr>
-                                              <td>
-												<a href=""><img src="img/Eliminar_Carpeta.png"></a> &nbsp
-                                                <a href="" class="btn btn-primary paddingbottom">Eliminar Carpeta</a>                                                
-                                                <div class="marginEtiqueta">                                               
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          
-                                        </table>
-                                  </FORM>
-        
-                                </ul>
-                            </div>
+                                                </td>
+                                              </tr>                                        
+                                              <tr>
+                                                <td>     
+  												                        <a href=""><img src="img/Crear_Carpeta.png"></a> &nbsp											  
+                                                  <a href="" class="btn btn-primary SepararEspacioVertical">Crear Carpeta</a>                                                
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+  												                        <a href=""><img src="img/Subir_Archivo.png"></a> &nbsp
+                                                  <a href="" class="btn btn-primary paddingbottom">Subir Archivo</a>                                              
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td >
+  												                        <a href=""><img src="img/Descargar_Carpeta.png"></a> &nbsp
+                                                  <!--<imput type = "submit" class="btn btn-success paddingbottom" value = "Descargar">-->
+                                                  <a href="" class="btn btn-primary paddingbottom">Descargar Carpeta</a>                                                
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+  												                        <a href=""><img src="img/Eliminar_Carpeta.png"></a> &nbsp
+                                                  <a href="" class="btn btn-primary paddingbottom">Eliminar Carpeta</a>                                                
+                                                  <div class="marginEtiqueta">                                               
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            
+                                          </table>
+                                    </FORM>
+          
+                                  </ul>
+                              </div>
                     </div>
                     <div class="col-md-9">
         
@@ -311,4 +306,15 @@
         </footer>
 
     </body>
+    <script  type="text/javascript">
+
+     $(document).ready(function(){
+
+        $("#btncerrar").click(function(){
+          window.location.href="index.html";
+
+        });
+
+     });
+    </script>
 </html>
